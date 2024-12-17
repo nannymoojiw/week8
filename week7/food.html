@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมค่าอาหาร</title>
+    <style>
+          body {
+        background-color: blueviolet;
+        width: 90vw;
+        height: 90vh;
+        align-content: center;
+        justify-items: center;
+    }
+
+        input {
+        width: 40vw;
+        height: 5vh;
+        border-radius: 20px;
+        padding-left: 2vw;
+    }
+    </style>
+</head>
+<body>
+    <h1>โปรแกรมค่าอาหาร</h1>
+    <div id="price"></div>
+    <div id="result"></div>
+
+    <script>
+        let n = prompt("จำนวนอาหาร:")
+        let sum = " "
+
+        for(var i = 1; i <= n; i++) {
+            let price = prompt("ราคาอาหารจานที่" + i)
+            sum = sum + parseInt(price)
+            document.getElementById("price").innerHTML = "ราคาอาหารจานที่" + i + price
+            document.getElementById("result").innerHTML = "ราคาอาหารทั้งหมด" + sum + "บาท"
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
